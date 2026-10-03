@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+padding: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        color:red;
+    }
+    nav ul {
+        display: flex;
+        gap: 20px;
+        li{
+            a{
+                color: white;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+
+    }
+
+}

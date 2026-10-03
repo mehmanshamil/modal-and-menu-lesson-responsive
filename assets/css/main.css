@@ -1,0 +1,110 @@
+#modal {
+  background-color: blue;
+  width: 50%;
+  height: 500px;
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 5rem;
+  left: 22rem;
+  border-radius: 10px;
+  #close {
+    position: absolute;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      border: 1px solid black;
+      background-color: black;
+      color: red;
+    }
+  }
+  #infoForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    input {
+      width: 80%;
+      height: 2rem;
+      margin: 1rem;
+      border-radius: 5px;
+      padding: 0.5rem;
+      border: none;
+    }
+    button {
+      width: 80%;
+      border: none;
+
+      border-radius: 5px;
+
+      height: 2rem;
+      margin: 1rem;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+section {
+  background-color: green;
+  width: 100%;
+  height: 500px;
+}
+
+/* ---------------------- */
+
+#menu {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.responsiveHeader {
+  position: absolute !important;
+  display: flex !important;
+  top: 77px;
+  background-color: black;
+  width: 50%;
+  left: 0;
+  height: 100vh;
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    li{
+        &:hover{
+            color: red;
+        }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+}
